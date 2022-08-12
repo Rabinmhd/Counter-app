@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ExtraText"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/DarkModSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Dark Mode"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="50dp"
+                android:text="Counts"
+                android:id="@+id/aText"
+                android:textSize="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="40dp"
+                android:id="@+id/count"
+                android:hint="0"
+                android:layout_below="@+id/aText"
+                android:textSize="70sp"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <ImageButton
+        android:layout_width="148dp"
+        android:layout_height="124dp"
+        android:layout_gravity="center"
+        android:id="@+id/btPlus"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
+
+        android:background="@drawable/_048px_gray_light_icon_svg"
+        android:textSize="50dp" />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7535469304880829/4125920333">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+
+
+
+</LinearLayout>
